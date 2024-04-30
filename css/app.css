@@ -1,0 +1,495 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+  background-color: rgba(255, 255, 255, 0.9); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+header.navbar-container .logo-text{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+header.navbar-container ul {
+ padding-left: 0;
+
+ display: flex;
+ justify-content: center;
+ gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.4rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+
+  transition:all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a{
+  background-color: grey;
+  color: white;
+  
+}
+
+
+main{
+flex: 1;
+
+ width: 100%;
+ margin-inline: auto;
+
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-color:#fff;
+}
+
+/* CROLLED */
+
+.navbar-container.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* HERO */
+main .hero{
+  
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/img_bg.jpg');
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+main .hero .hero-content .title {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+
+main .content .hero-content  p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+main .hero  .hero-content{
+  max-width: 500px;
+  margin: auto;
+}
+
+main .hero .hero-content button{
+  padding: 0.8rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .hero .hero-content button:hover{
+  border: 3px solid white;
+  background-color: transparent;
+  
+  color: white;
+  }
+
+/* ABOUT COMPANY */
+
+main .container-about{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+main .container-about .about-company  {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff
+}
+
+main .about-company img{
+  height: 300px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+}
+
+main .desc {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  color: #333;
+ 
+}
+
+main .container-about .about-company  .desc .desc-company{
+  text-transform: none;
+  font-size: 2.5rem;
+  line-height: 1.7rem;
+  max-width: 300px;
+  letter-spacing: 0.5px;
+}
+
+main .about-company, .desc button{
+  padding: 0.8rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+
+  font-family: 'Quicksand', sans-serif;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  max-width: 150px;
+}
+
+main .about-company .desc button:hover{
+border: 3px solid gray;
+background-color: transparent;
+
+color: grey;
+}
+
+main .container-about .discount{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff
+  }
+
+
+main .container-about .discount .desc{
+ align-items: center;
+}
+
+main .discount button{
+  padding: 0.8rem 1.5rem;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  background-color: goldenrod;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  max-width: 150px;
+}
+
+
+main .discount button:hover{
+  border: 3px solid goldenrod;
+  background-color: transparent;
+  
+  color: goldenrod;
+  }
+
+
+/* PRODUCT */
+
+main .container-product{
+  padding: 10px;
+  gap: 10px;
+}
+
+main .product {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff
+}
+
+.product h2 {
+  padding-left: 20px;
+  text-align:start; 
+  margin-bottom: 20px; 
+}
+
+.card {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card{
+  max-width: 300px;
+}
+
+.product-card h3{
+  margin-top: 10px;
+}
+
+.product-card button{
+  font-family: 'Quicksand', sans-serif;
+  transition: all 0.15s ease-in;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.product-card button:hover{
+  background-color: transparent;
+  border: 3px solid grey;
+  color: grey;
+  
+}
+
+main .product-card img{
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+}
+
+main .container-product{
+  display: flex;
+}
+
+main .container-product .product .product-card .btn{
+  text-decoration: none;
+  background-color:gray;
+  color: white;
+  border-radius: 10px;
+}
+
+/* ASIDE */
+
+main .category{
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+main .category h2{
+  padding-left: 20px;
+  margin-bottom: 15px;
+
+}
+
+main .category ul{
+  list-style: none;
+  padding: 0; 
+  margin: 0;
+}
+
+main .category ul li{
+  padding: 10px 0;
+}
+
+main .category ul li a{
+text-decoration: none;
+font-weight: 500;
+color: #333;
+}
+
+main  .category ul li a img{
+max-width: 100%;
+height: auto;
+width: 100%;
+max-height: 100px;
+object-fit: cover;
+}
+
+/* ARTICLE */
+
+main .article-container{
+  display: flex;
+  align-content: start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+
+}
+
+main .article-container .article {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff
+}
+
+main .article-container .article-description {
+
+}
+
+
+main .article-container .article-description a {
+
+}
+
+
+main .article-container .article {
+  padding-left: 20px;
+}
+
+main .article-container .article .article-description p{
+max-width: 500px;
+}
+
+main .article-container .article .article-description a{
+  color: #333;
+  text-decoration: none;
+}
+
+/* paggination */
+.pagination {
+  
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #333;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: #f2f2f2;
+}
+
+.pagination a.prev,
+.pagination a.next {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.pagination a.prev:hover,
+.pagination a.next:hover {
+  background-color: #e0e0e0;
+}
+
+/* footer */
+
+.footer{
+  
+  padding: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-container {
+  
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff
+}
+
+.footer .footer-container .footer-links ul{
+  list-style: none;
+}
+
+.footer .footer-container .footer-links ul li a{
+  text-decoration: none;
+  color: #333;
+}
+
+.footer .footer-bottom{
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
